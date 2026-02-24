@@ -5,7 +5,7 @@ declare(strict_types=1);
 /**
  * Lekce 2: Podmínky
  * Spuštění: php lekce/02-podminky.php
- */
+ 
 
 $vek = 17;
 
@@ -73,3 +73,25 @@ echo "Uživatel: {$jmeno}\n";
 echo "\n--- Tvůj úkol ---\n";
 // TODO: Napiš podmínku (použij match), která podle skóre (0-100) vypíše známku
 //       90-100 = 1, 75-89 = 2, 50-74 = 3, 25-49 = 4, 0-24 = 5
+*/
+$procent = 10;
+    
+$znamka = match (true) {
+    $procent >= 90 => 1,
+    $procent >= 75 => 2,
+    $procent >= 50 => 3,
+    $procent >= 25 => 4,
+    default => 5,
+};
+
+echo "Máš {$procent}% a dostáváš známku {$znamka}\n";
+
+if ($procent > 52){
+    echo "Super známka";
+}
+elseif($procent < 50 && $procent >20){
+    echo "prospěl";
+}
+else{
+    echo 'neprospěl';
+}
