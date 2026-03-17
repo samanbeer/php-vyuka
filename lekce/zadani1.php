@@ -4,6 +4,8 @@ $a = 20;
 $b = 20;
 $c = 15;
 $e = 0;
+
+const SKOLNI_ROK = '2025/2026';
 echo "a = {$a}, b={$b}, c={$c}\n";
 
 if (($a + $b) < $c){

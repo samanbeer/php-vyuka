@@ -10,7 +10,7 @@ declare(strict_types=1);
 echo "=== Indexované pole ===\n";
 $barvy = ['červená', 'zelená', 'modrá'];
 echo "První barva: {$barvy[0]}\n";
-echo "Počet barev: " . count($barvy) . "\n";
+echo "Počet bacrev: " . count($barvy) . "\n";
 
 // Přidání prvku
 $barvy[] = 'žlutá';
